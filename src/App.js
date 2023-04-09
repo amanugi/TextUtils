@@ -19,12 +19,26 @@ function App() {
 
   const[alert, setAlert] = useState(null);
 
+  // const removeBodyClasses = () => {
+  //   document.body.classList.remove('bg-dark');
+  //   document.body.classList.remove('bg-light');
+  //   document.body.classList.remove('bg-success');
+  //   document.body.classList.remove('bg-warning');
+  //   document.body.classList.remove('bg-danger');
+  // }
+
   const toggleMode = () => {
+    // removeBodyClasses();
+
+    // console.log('Class', cls);
+
+    // document.body.classList.add('bg-' + cls);
+
     if(mode === 'light'){
       setMode('dark');
       document.body.style.backgroundColor = '#181632';   // background color of app
 
-      showAlert("Dark mode has been enabled", "success");
+      //showAlert("Dark mode has been enabled", "success");
     }
     else{
       setMode('light');
